@@ -28,7 +28,7 @@ async function createVisitor(user, callback) {
     });
 }
 
-async function getAllvisitors() {
+async function getAllVisitors() {
     return await VisitorModel.find({}, function (err,visitors ) {
         if (err) {
             return console.error(err);
@@ -40,6 +40,6 @@ async function getAllvisitors() {
 module.exports = {
     
     createVisitor,
-    getAllvisitors,
+    getAllVisitors,
 };
 
