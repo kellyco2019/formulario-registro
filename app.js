@@ -13,7 +13,7 @@ app.set("view engine", "mustache");
 app.set("views", __dirname + "/views")
 
 app.get("/", async (req , res) => {
-   const visitors = await model.getallVisitors();
+   const visitors = await model.getAllVisitors();
    
    res.render("table.html" , { visitors });
 });
