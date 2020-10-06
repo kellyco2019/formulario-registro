@@ -6,8 +6,6 @@ const model = require("./model");
 
 const app = express();
 
-
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.engine("html", mustacheExpress());
 
